@@ -12,8 +12,8 @@
     BOOL isShowingActivity;
 }
 
-@property (nonatomic, retain) IBOutlet UIView *yellowView;
-@property (nonatomic, retain) IBOutlet UIButton *activityButton;
+@property (nonatomic, weak) IBOutlet UIView *yellowView;
+@property (nonatomic, weak) IBOutlet UIButton *activityButton;
 
 -(IBAction)buttonPressed:(id)sender;
 

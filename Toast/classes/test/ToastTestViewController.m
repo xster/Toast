@@ -64,7 +64,6 @@
                         duration:2.0
                         position:@"center"];
             
-            [customView release];
             break;
         }
             
@@ -76,7 +75,6 @@
                         duration:2.0
                         position:[NSValue valueWithCGPoint:CGPointMake(110, 110)]]; // wrap CGPoint in an NSValue object
                         
-            [toastView release];
             break;
         }
             
@@ -131,9 +129,8 @@
 }
 
 - (void)dealloc {
-    [_yellowView release], _yellowView = nil;
-    [_activityButton release], _activityButton = nil;
-    [super dealloc];
+    _yellowView = nil;
+    _activityButton = nil;
 }
 
 @end
